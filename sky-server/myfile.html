@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术栈布局</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .category {
+            display: flex;
+            align-items: center; /* 确保标题和技术栈项垂直居中对齐 */
+            margin-bottom: 10px;
+            border: 2px solid #cccccc;
+            background-color: #f2f2f2;
+        }
+        .header {
+            background-color: #4a8bda;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            width: 120px; /* 设置固定宽度以便统一标题区域 */
+        }
+        .items {
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            flex-grow: 1; /* 使得技术栈区域在可用空间中尽可能展开 */
+        }
+        .items span {
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc;
+            flex-grow: 1; /* 允许每个项根据其内容自动扩展，但尽可能填充空间 */
+            text-align: center; /* 文本居中显示 */
+            white-space: nowrap; /* 避免文本换行 */
+        }
+    </style>
+</head>
+<body>
+<div class="category">
+    <div class="header">前端</div>
+    <div class="items">
+        <span>node.js</span>
+        <span>VUE.js</span>
+        <span>ElementUI</span>
+        <span>微信小程序</span>
+        <span>apache eCharts</span>
+    </div>
+</div>
+<div class="category">
+    <div class="header">数据层</div>
+    <div class="items">
+        <span>Nginx</span>
+    </div>
+</div>
+<div class="category">
+    <div class="header">应用层</div>
+    <div class="items">
+        <span>Spring Boot</span>
+        <span>Spring MVC</span>
+        <span>Spring Task</span>
+        <span>httpclient</span>
+        <span>Spring Cache</span>
+        <span>JWT</span>
+        <span>阿里云OSS</span>
+        <span>Swagger</span>
+        <span>POI</span>
+        <span>WebSocket</span>
+    </div>
+</div>
+</body>
+</html>
